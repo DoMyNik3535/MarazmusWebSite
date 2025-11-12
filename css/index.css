@@ -198,3 +198,39 @@
     left: 213px;
     top: 24px;
 }
+#theme-toggle-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    padding: 8px 12px;
+    font-size: 20px;
+    border: 1px solid #B88E2F;
+    border-radius: 50%;
+    background-color: #FCF8F3;
+    color: #B88E2F;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+body,
+.product,
+.rooms_container,
+.title_products,
+.product_title,
+.product_price,
+.rooms_title,
+.sub_room_title,
+.product_description,
+.product_sale,
+.rooms_small_text,
+.sub_room_small_text,
+.button_show_more {
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+body.dark-mode #theme-toggle-btn {
+    background-color: #1e1e1e;
+    color: #B88E2F;
+    border-color: #B88E2F;
+}
