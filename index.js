@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    // 1. Динамическое добавление стилей для темной темы
     const darkThemeStyles = `
         body.dark-mode {
             background-color: #121212;
@@ -49,19 +48,14 @@ document.addEventListener('DOMContentLoaded', function() {
     styleSheet.innerText = darkThemeStyles;
     document.head.appendChild(styleSheet);
 
-    // 2. Поиск кнопки в HTML
     const themeToggleButton = document.getElementById('theme-toggle-btn');
 
-    // 3. Проверка и применение сохраненной темы
-    // По умолчанию тема светлая. Код ниже применит темную тему,
-    // только если она была сохранена при прошлом визите.
     const currentTheme = localStorage.getItem('theme');
     if (currentTheme === 'dark') {
         document.body.classList.add('dark-mode');
         themeToggleButton.innerText = '☀️';
     }
 
-    // 4. Обработчик клика для переключения темы
     themeToggleButton.addEventListener('click', () => {
         document.body.classList.toggle('dark-mode');
         
