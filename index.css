@@ -1,0 +1,236 @@
+.third_screen {
+    margin-top: 80px;
+}
+.title_products {
+    position: relative;
+    text-align: center;
+    font-family: Poppins;
+    color: #404040;
+    font-size: 40px;    
+    font-weight: bold;  
+}
+.products_container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;    
+    gap: 32px;
+    width: 1236px;
+    height: 924px;
+    margin: 0 auto;
+}
+.product {
+    position: relative; 
+    width: 285px;
+    height: 446px;
+    background-color: #F4F5F7;
+    cursor: pointer;
+}
+.discount_text {
+    position: absolute;
+    left: 6px;    
+    top: -4px;
+    font-family: Poppins;
+    font-size: 16px;
+    color: aliceblue;
+    
+}
+.product_title {
+    text-align: left;
+    font-family: Poppins;
+    color: #404040;
+    font-size: 24px;
+    font-weight: 600;
+}
+.product_text {
+    position: absolute;
+    left: 16px;
+    width: 265px;
+    height: 145px;
+    line-height: 9px;
+}
+.product_description {
+    text-align: left;
+    font-family: Poppins;
+    color: #898989;
+    font-size: 16px;
+    font-weight: 500;
+}
+.product_cost {
+    display: flex;
+    position: relative; 
+    top: -8px;
+    gap: 16px;
+    width: 260px;
+    height: 30px;
+}
+.product_price {
+    font-family: Poppins;
+    color: #3A3A3A;
+    font-size: 20px;
+    font-weight: 600;
+}
+.product_sale {
+    font-family: Poppins;
+    color: #B0B0B0;
+    font-size: 16px;
+    font-weight: normal;
+    padding-top: 4px;
+    text-decoration: line-through;
+}
+.button_show_more_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button_show_more {
+    height: 48px;
+    width: 245px;
+    transition: all 0.3s; 
+    cursor: pointer;
+    background: white;
+    border: 2px solid #B88E2F;
+    font-family: Poppins;
+    color: #B88E2F;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 32px;
+}
+.button_show_more:hover {
+    background: #B88E2F;
+    color: white;
+    font-size: 18px;
+}
+.rooms_container {
+    height: 670px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 69px;
+    background-color: #FCF8F3;
+    gap: 80px;
+}
+.rooms_text {
+    display: flex;
+    position: relative; 
+    flex-wrap: wrap;
+    height: 224px;
+    width: 422px;
+    left: 35px;
+    margin-top: -80px;
+    text-align: left;
+}
+.rooms_title {
+    position: relative;
+    font-family: Poppins;
+    color: #3A3A3A;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 50px;
+}
+.rooms_small_text {
+    position: relative;
+    font-family: Poppins;
+    color: #616161;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: -25px;
+}
+.button_explore_more_container {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-top: -25px;
+}
+.button_explore_more {
+    height: 48px;
+    width: 176px;
+    transition: all 0.3s; 
+    cursor: pointer;
+    background: #B88E2F;
+    border: 2px solid #B88E2F;
+    font-family: Poppins;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 32px;
+}
+.button_explore_more:hover {
+    background: white;
+    color: #B88E2F;
+    font-size: 18px;
+}
+.room_img_container {
+    display: flex;
+    position: relative;
+    gap: 24px;
+}
+.sub_room_container {
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    height: 130px;
+    width: 217px;
+    background-color: rgba(255, 255, 255, 0.75);
+    left: 24px;
+    top: 428px;
+}
+.sub_room_title {
+    position: relative;
+    font-family: Poppins;
+    color: #3A3A3A;
+    font-size: 28px;
+    font-weight: 600;   
+    margin-top: -10px;
+    margin-left: 32px;
+}
+.sub_room_small_text {
+    font-family: Poppins;
+    color: #616161; 
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 32px;
+    margin-left: 32px;
+}
+.discount{
+    position: absolute;
+    left: 213px;
+    top: 24px;
+}
+#theme-toggle-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    padding: 8px 12px;
+    font-size: 20px;
+    border: 1px solid #B88E2F;
+    border-radius: 50%;
+    background-color: #FCF8F3;
+    color: #B88E2F;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+body,
+.product,
+.rooms_container,
+.title_products,
+.product_title,
+.product_price,
+.rooms_title,
+.sub_room_title,
+.product_description,
+.product_sale,
+.rooms_small_text,
+.sub_room_small_text,
+.button_show_more {
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+body.dark-mode #theme-toggle-btn {
+    background-color: #1e1e1e;
+    color: #B88E2F;
+    border-color: #B88E2F;
+}
